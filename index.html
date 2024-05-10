@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Interactive Generative Art</title>
+		<meta name="description" content="Javascript Class">
+		<meta name="author" content="Parsons Student">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+
+		<div id="landing-page" class="centered">
+        <h1>Interactive Generative Art</h1>
+        <img src="Media/Sample.gif" alt="Animated GIF" class="small-gif">
+        <button class="start" id="start"><i>Draw Something</i></button>
+    </div>
+    <div id="canvas-page" class="hidden">
+    
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+    <canvas id="canvas4"></canvas>
+
+    <button class="toggle-button" onclick="toggleMenu()">O</button>
+    
+      <div class="menu-content">
+            <h3>Canvas Setting</h3>
+            <br><br>
+            <div class="shapeselector">
+       <button id="line">|</button>  
+       <button id="triangle">▲</button> 
+       <button id="square">█</button> 
+       <button id="circle">◯</button> 
+       </div>  
+       <br>
+       <div class="container">
+    
+      <div class="circle"></div>
+    <div class="circle circle1" ></div>
+    <div class="circle circle2" ></div>
+    <div class="circle circle3" ></div>
+    <div class="circle circle4" ></div>
+    <div class="circle circle5" ></div>
+    <div class="circle circle6" ></div>
+</div>    
+      
+            <br>
+        <div class="linewidth">
+          <span>Line Width</span>
+        <input type="range" min="1" max="10" value="2" class="slider" id="lineWidthSlider" onchange="Width()">
+        </div>
+        <button id="screenshot-btn">Save</button> <button id="reset">Reset</button> 
+            
+        </div>
+    </div>
+
+		<script src="js/scripts.js"></script>
+	</body>
+
+</html>
