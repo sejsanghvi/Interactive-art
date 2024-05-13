@@ -178,6 +178,8 @@ function reset(){
     clearAllCanvases();
     initializeDrawing();
     lastActiveCanvas='canvas1';
+    drawcolor='#FFF8DC';
+    lineWidth= 2;
 }
 
 
